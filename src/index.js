@@ -17,7 +17,7 @@ module.exports = function check(str, bracketsConfig) {
         let find = findBrackets(str);
         while (find === 0 || find > 0) {
             find = findBrackets(str);
-            if (find > 0 || find === 0) {
+            if (find === 0 || find > 0) {
                 str.splice(find, 2);
             }
         }
